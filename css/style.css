@@ -1,0 +1,103 @@
+/*
+* @Author: WC
+* @Date:   2017-11-01 16:36:57
+* @Last Modified time: 2017-11-03 19:38:29
+*/
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-image: url("../img/bg_1.jpg");
+    background-size: cover;
+    color: #fff;
+}
+.ui-index h1{
+    font-size: 50px;
+    text-shadow: 2px 8px 2px #000;
+    text-align: center;
+    margin: 35px auto;
+    font-weight: bold;
+}
+.ui-index .btn,.ui-result .btn{
+    display: block;
+    width: 140px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+}
+.ui-index{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -130px;
+}
+.ui-panel{
+    width: 80%;
+    padding: 14px;
+    border: 2px solid #fff;
+    background-color: #070808;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin-top: -109px;
+}
+.ui-rule h2{
+    font-size: 24px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+.ui-rule p{
+    margin: 16px auto;
+}
+.ui-panel button{
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+    font-size: 18px;
+    padding: 2px 6px;
+}
+.ui-setting h2{
+    font-size: 24px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+.ui-setting .setting-group{
+    margin: 16px auto;
+}
+.ui-setting li{
+    margin-bottom: 10px;
+}
+.ui-setting .setting-group select{
+    width: 100px;
+    background: #fff;
+    margin-left: 10px;
+    border-radius: 0;
+}
+.ui-result span{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* 游戏场景切换 */
+[data-status="index"] .ui-index{
+    display: block;
+}
+[data-status="rule"] .ui-rule{
+    display: block;
+}
+[data-status="setting"] .ui-setting{
+    display: block;
+}
+[data-status="result"] .ui-result{
+    display: block;
+}

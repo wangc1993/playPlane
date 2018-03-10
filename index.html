@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>打飞机小游戏</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-status="index">
+<canvas id="game"></canvas>
+<div class="ui-index hide">
+    <h1>飞机大作战</h1>
+    <div class="btn-group">
+        <button class="btn js-start">开始游戏</button>
+        <button class="btn js-setting">游戏设置</button>
+        <button class="btn js-rule">游戏说明</button>
+    </div>
+</div>
+<div class="ui-rule ui-panel hide">
+    <h2>游戏说明</h2>
+    <p>通过手指移动飞机，通过手指移动飞机，通过手指移动飞机，通过手指移动飞机，通过手指移动飞机。</p>
+    <button class="js-confirm-rule">我知道了</button>
+</div>
+<div class="ui-setting ui-panel hide">
+    <h2>游戏设置</h2>
+    <ul class="setting-group">
+        <li>
+            <span>音乐设置</span>
+            <select class="music-setting">
+                <option value="open">开启音乐</option>
+                <option value="close">关闭音乐</option>
+            </select>
+        </li>
+        <li>
+            <span>背景设置</span>
+            <select class="background-setting">
+                <option value="nightAttack">夜袭基地</option>
+                <option value="lostMonuments">迷失古迹</option>
+                <option value="virginForest">原始森林</option>
+                <option value="burstedVolcano">爆裂火山</option>
+            </select>
+        </li>
+        <li>
+            <span>战机设置</span>
+            <select class="plane-setting">
+                <option value="bluePlaneIcon">蓝色战机</option>
+                <option value="pinkPlaneIcon">粉红战机</option>
+            </select>
+        </li>
+    </ul>
+    <button class="js-confirm-setting">确认设置</button>
+</div>
+<div class="ui-result ui-panel hide">
+    <span class="js-result"></span>
+    <div class="btn-group">
+        <button class="btn js-start">重新游戏</button>
+        <button class="btn js-setting">游戏设置</button>
+        <button class="btn js-rule">游戏说明</button>
+    </div>
+</div>
+<!-- 音乐 -->
+<div class="music-setting">
+    <audio class="shootSound" src=""></audio>
+    <audio class="gameSound" src="" loop="true"></audio>
+    <audio class="dieSound" src=""></audio>
+    <audio class="buttonSound" src=""></audio>
+    <audio class="boomSound" src=""></audio>
+</div>
+<!-- 页面js -->
+<script src="js/config.js"></script>
+<script src="js/resource.js"></script>
+<script src="js/element.js"></script>
+<script src="js/bullet.js"></script>
+<script src="js/enemy.js"></script>
+<script src="js/plane.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
